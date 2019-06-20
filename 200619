@@ -1,0 +1,18 @@
+//for take name input and show name output
+
+setname.setOnClickListener {
+   	var urname = inpName.text.toString()
+
+   	name.text = "Your name is: $urname"
+}
+
+//for taking year of birth input and show age output
+
+findage.setOnClickListener {
+	var year = inpYear.text.toString().toInt()
+   	var c_year = Calendar.getInstance().get(Calendar.YEAR)
+
+	var urage = c_year - year
+	age.text = "Your age is: $urage"
+
+}
